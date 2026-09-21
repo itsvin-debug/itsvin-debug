@@ -103,9 +103,12 @@ Halo! Saya **Vin**, seorang murid di **SMKN 1 Ciomas** yang memiliki passion bes
 
 ---
 
-### 📊 GitHub Statistics
+### 📊 GitHub Statistics & Activity
 
 <div align="center">
+  <!-- Activity Overview Card -->
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=itsvin-debug&theme=tokyonight" alt="Vin's Activity Overview" />
+  <br /><br />
   <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=itsvin-debug&show_icons=true&theme=tokyonight&hide_border=false" alt="Vin's GitHub Stats" />
   <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=itsvin-debug&layout=compact&theme=tokyonight&hide_border=false" alt="Top Languages" />
   <br /><br />
