@@ -5,7 +5,7 @@
 
   <!-- Animated Typing Text -->
   <a href="https://github.com/itsvin-debug">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=500&lines=Student+at+SMKN+1+Ciomas+%F0%9F%8E%93;Aspiring+Web+Developer+%F0%9F%92%BB;Skilled+in+PHP%2C+Laravel%2C+JS+%26+Python+%E2%9A%A1;Building+Modern+Web+Applications+%F0%9F%9A%80" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=500&lines=Student+at+SMKN+1+Ciomas+%F0%9F%8E%93;Aspiring+Web+Developer+%F0%9F%92%BB;PHP%2C+Laravel%2C+JS%2C+React+%26+Python+%E2%9A%A1;Building+Modern+Web+Applications+%F0%9F%9A%80" alt="Typing SVG" />
   </a>
 
 </div>
@@ -18,11 +18,47 @@ Halo! Saya **Vin**, seorang murid di **SMKN 1 Ciomas** yang memiliki passion bes
 
 - 🎓 **Pendidikan:** Siswa di **SMKN 1 Ciomas**
 - 🎯 **Cita-cita:** Professional Web Developer & Software Engineer
-- ⚡ **Bahasa yang Dikuasai:** PHP, JavaScript, Python
-- 🚀 **Framework Favorit:** Laravel
-- 🗄️ **Database:** MySQL
-- 🌱 **Fokus Belajar Saat Ini:** RESTful API, Modern Web Architecture, & Best Practices
-- 💬 **Diskusi Santai:** PHP, Laravel, Web Slicing, Python Scripting
+- ⚡ **Bahasa Utama:** PHP, JavaScript, Python
+- 🚀 **Framework & Library:** Laravel, React
+- 🗄️ **Database:** MySQL / SQL
+- 🌱 **Fokus Belajar Saat Ini:** Fullstack Web Development, RESTful API, & Clean Code
+- 💬 **Diskusi Santai:** PHP/Laravel, JavaScript/React, Web Slicing, Python Scripting
+
+---
+
+### 💻 I Code With
+
+<div align="center">
+
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=php,python,js,laravel,react" alt="I Code With" />
+  </a>
+
+</div>
+
+---
+
+### 👾 Pac-Man & Snake Contribution Games
+
+<div align="center">
+
+  <!-- Pac-Man Game Animation -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/itsvin-debug/itsvin-debug/output/pacman-contribution-graph-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/itsvin-debug/itsvin-debug/output/pacman-contribution-graph.svg">
+    <img alt="Pac-Man contribution graph" src="https://raw.githubusercontent.com/itsvin-debug/itsvin-debug/output/pacman-contribution-graph.svg" width="100%" />
+  </picture>
+
+  <br /><br />
+
+  <!-- Snake Game Animation -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/itsvin-debug/itsvin-debug/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/itsvin-debug/itsvin-debug/output/github-contribution-grid-snake.svg">
+    <img alt="Snake contribution graph" src="https://raw.githubusercontent.com/itsvin-debug/itsvin-debug/output/github-contribution-grid-snake.svg" width="100%" />
+  </picture>
+
+</div>
 
 ---
 
@@ -30,8 +66,23 @@ Halo! Saya **Vin**, seorang murid di **SMKN 1 Ciomas** yang memiliki passion bes
 
 <div align="center">
 
+  #### 🌐 Languages & Frontend
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=php,laravel,js,python,html,css,tailwind,bootstrap,mysql,git,github,vscode,postman" alt="Tech Stack Icons" />
+    <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind,bootstrap" alt="Frontend Stack" />
+  </a>
+
+  <br />
+
+  #### ⚙️ Backend & Database
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=php,laravel,python,mysql" alt="Backend Stack" />
+  </a>
+
+  <br />
+
+  #### 🧰 Tools & Platforms
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,github,vscode,postman,nodejs,vite" alt="Tools and Platforms" />
   </a>
 
 </div>
