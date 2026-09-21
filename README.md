@@ -36,6 +36,20 @@ Halo! Saya **Vin**, seorang murid di **SMKN 1 Ciomas** yang memiliki passion bes
 
 </div>
 
+### ♟️ Mini Game: Real-Time Chess Arena
+
+<div align="center">
+  <p>Tantang saya atau AI Bot dalam permainan catur interaktif langsung di browsermu! ♟️⚡</p>
+
+  <a href="https://itsvin-debug.github.io/itsvin-debug/chess/" target="_blank">
+    <img src="https://img.shields.io/badge/PLAY_NOW-VIN'S_CHESS_ARENA-0ea5e9?style=for-the-badge&logo=lichess&logoColor=white" alt="Play Chess Live" />
+  </a>
+  <br /><br />
+  <a href="https://itsvin-debug.github.io/itsvin-debug/chess/" target="_blank">
+    <img src="https://capsule-render.vercel.app/api?type=rect&color=0:090d16,100:1e293b&height=120&text=♟️%20Play%20Live%20Chess%20Arena%20(Click%20Here)&fontSize=22&fontColor=38bdf8&stroke=38bdf8&strokeWidth=2&borderRadius=12&desc=Vs%20AI%20Bot%20%7C%202-Pemain%20Pass%20&%20Play%20•%20Live%20Sound%20Effects%20•%20Instant%20Play&descFontSize=14&descAlignY=68" width="90%" alt="Play Live Chess Banner" />
+  </a>
+</div>
+
 ---
 
 ### 👾 Pac-Man & Snake Contribution Games
