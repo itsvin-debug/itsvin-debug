@@ -106,13 +106,13 @@ Halo! Saya **Vin**, seorang murid di **SMKN 1 Ciomas** yang memiliki passion bes
 ### 📊 GitHub Statistics & Activity
 
 <div align="center">
-  <!-- Activity Overview Card -->
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=itsvin-debug&theme=tokyonight" alt="Vin's Activity Overview" />
+  <!-- Streak Stats (Live Active Contributions & Streak) -->
+  <img src="https://streak-stats.demolab.com/?user=itsvin-debug&theme=tokyonight&hide_border=false&cache_seconds=1800" alt="Vin's GitHub Streak" />
   <br /><br />
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=itsvin-debug&show_icons=true&theme=tokyonight&hide_border=false" alt="Vin's GitHub Stats" />
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=itsvin-debug&layout=compact&theme=tokyonight&hide_border=false" alt="Top Languages" />
-  <br /><br />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=itsvin-debug&theme=tokyonight&hide_border=false" alt="GitHub Streak" />
+  <!-- GitHub Overall Stats (All-time Commits & Metrics) -->
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=itsvin-debug&show_icons=true&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true&cache_seconds=1800" alt="Vin's GitHub Stats" />
+  <!-- Top Programming Languages -->
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=itsvin-debug&layout=compact&theme=tokyonight&hide_border=false&hide=hack&cache_seconds=1800" alt="Top Languages" />
 </div>
 
 ---
