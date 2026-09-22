@@ -112,7 +112,7 @@ Halo! Saya **Vin**, seorang murid di **SMKN 1 Ciomas** yang memiliki passion bes
   <!-- GitHub Overall Stats (All-time Commits & Metrics) -->
   <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=itsvin-debug&show_icons=true&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true&cache_seconds=1800" alt="Vin's GitHub Stats" />
   <!-- Top Programming Languages -->
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=itsvin-debug&layout=compact&theme=tokyonight&hide_border=false&hide=hack&cache_seconds=1800" alt="Top Languages" />
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=itsvin-debug&layout=compact&theme=tokyonight&hide_border=false&hide=hack,ren'py&cache_seconds=1800" alt="Top Languages" />
 </div>
 
 ---
