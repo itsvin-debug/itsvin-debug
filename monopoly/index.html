@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vin's Digital Monopoly Arena 🎲 | Classic 40-Tile Board Game</title>
+
+  <!-- Google Fonts: Vintage Serif & Clean Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Header Navigation -->
+  <header class="app-header">
+    <div class="brand">
+      <span class="brand-icon">🎲</span>
+      <div>
+        <h1>VIN MONOPOLY ARENA</h1>
+        <p class="tagline">Official 40-Tile Physical Board Game • 2–4 Players • Smart AI & Pass-Play</p>
+      </div>
+    </div>
+
+    <div class="header-nav">
+      <button id="btnSoundToggle" class="btn btn-dark btn-icon" title="Toggle Sound Efek Suara">🔊</button>
+      <button id="btnRulesGuide" class="btn btn-dark" title="Panduan Aturan Resmi">📜 Aturan Klasik</button>
+      <button id="btnNewGame" class="btn btn-brass" title="Atur Permainan Baru">⚙️ Permainan Baru</button>
+      <a href="../chess/" class="btn btn-dark" title="Buka Vin Chess Arena">♟️ Vin Chess</a>
+      <a href="https://github.com/itsvin-debug" target="_blank" class="btn btn-dark" title="Lihat Profil GitHub Vin">
+        <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+        </svg>
+        GitHub
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Viewport -->
+  <main class="game-viewport">
+    
+    <!-- Central 40-Tile Board -->
+    <section class="board-container">
+      <div id="monopolyBoard" class="monopoly-board">
+        <!-- Board Center Canvas -->
+        <div class="board-center">
+          <div class="board-watermark">
+            <h2>MONOPOLY</h2>
+            <p>CLASSIC REAL ESTATE</p>
+          </div>
+
+          <div class="center-card-slots">
+            <div class="deck-slot deck-community">
+              <span>📦 DANA UMUM</span>
+            </div>
+            <div class="deck-slot deck-chance">
+              <span>🎴 KESEMPATAN</span>
+            </div>
+          </div>
+
+          <div id="centerWidget" class="center-status-widget">
+            <span>🅿️ Free Parking Pool:</span>
+            <span id="jackpotAmountText" class="jackpot-badge">$0</span>
+          </div>
+        </div>
+
+        <!-- 40 Tile DOM elements injected dynamically by app.js -->
+      </div>
+    </section>
+
+    <!-- Interactive Sidebar -->
+    <aside class="sidebar-panel">
+      
+      <!-- Player Status Roster Card -->
+      <div class="dashboard-card">
+        <div class="dashboard-header">
+          <span class="dashboard-title">👑 DAFTAR PEMAIN</span>
+          <span id="gameModeBadge" style="font-size: 0.72rem; color: #d1d5db;">4 Pemain</span>
+        </div>
+
+        <div id="turnBanner" class="turn-banner">
+          <span id="turnPlayerName">Menunggu Giliran...</span>
+          <span id="turnPhaseIndicator" style="font-size: 0.72rem; background: rgba(0,0,0,0.3); padding: 2px 6px; border-radius: 4px;">SIAP LEMPAR DADU</span>
+        </div>
+
+        <div id="playersList" class="players-grid">
+          <!-- Dynamic Player status cards injected here -->
+        </div>
+      </div>
+
+      <!-- Action & Dice Control Card -->
+      <div class="dashboard-card">
+        <div class="dashboard-header">
+          <span class="dashboard-title">🎲 AKSI & KONTROL</span>
+          <span id="doublesStreakBadge" style="font-size: 0.75rem; color: #fbbf24;"></span>
+        </div>
+
+        <div class="action-controls">
+          <!-- 3D Dice Rolling Container -->
+          <div class="dice-zone">
+            <div id="diceCube1" class="dice-cube">⚀</div>
+            <div id="diceCube2" class="dice-cube">⚀</div>
+            <div id="diceTotalDisplay" style="font-weight: 700; font-size: 1.1rem; color: #f3f4f6; margin-left: 0.5rem;">
+              Total: 2
+            </div>
+          </div>
+
+          <!-- Buttons Grid -->
+          <div class="action-buttons-grid">
+            <button id="btnRollDice" class="btn btn-action-primary">🎲 Lempar Dadu</button>
+            <button id="btnManageBuildings" class="btn btn-action-secondary">🏠 Bangun Rumah</button>
+            <button id="btnManageMortgage" class="btn btn-action-secondary">📜 Hipotek Bank</button>
+            <button id="btnTrade" class="btn btn-action-secondary">🤝 Tukar Aset (Trade)</button>
+            <button id="btnEndTurn" class="btn btn-action-secondary" disabled>⏭️ Akhiri Giliran</button>
+          </div>
+
+          <!-- In-Jail Specific Escape Buttons (Visible only when current player is in Jail) -->
+          <div id="jailActionsRow" style="display: none; gap: 0.5rem; margin-top: 0.2rem;">
+            <button id="btnPayJailFine" class="btn btn-brass" style="flex: 1; font-size: 0.75rem;">💵 Bayar Denda $50</button>
+            <button id="btnUseJailCard" class="btn btn-dark" style="flex: 1; font-size: 0.75rem;">🎟️ Pakai Kartu Bebas</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Activity Log Card (Aged Typewriter Paper) -->
+      <div class="dashboard-card activity-log-card">
+        <div class="dashboard-header">
+          <span class="dashboard-title">📜 LOG AKTIVITAS (TYPEWRITER)</span>
+          <button id="btnClearLog" style="background: none; border: none; color: #9ca3af; font-size: 0.7rem; cursor: pointer;">Bersihkan</button>
+        </div>
+        <div id="activityLog" class="log-content">
+          <!-- Logs prepended here -->
+        </div>
+      </div>
+
+    </aside>
+
+  </main>
+
+  <!-- ==================== MODAL OVERLAYS ==================== -->
+
+  <!-- 1. BUY PROPERTY / TITLE DEED MODAL -->
+  <div id="buyModal" class="modal-overlay">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3>PEMBELIAN PROPERTI</h3>
+      </div>
+      <div class="modal-body">
+        <div id="deedCardContainer" class="deed-card">
+          <!-- Rendered title deed card -->
+        </div>
+        <p id="buyNoticeText" style="text-align: center; font-size: 0.88rem; color: #4b5563;">
+          Apakah Anda ingin membeli properti ini sesuai harga tercantum di atas?
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button id="btnDeclineBuy" class="btn btn-dark">Tolak (Buka Lelang)</button>
+        <button id="btnConfirmBuy" class="btn btn-brass">Beli Properti Ini</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. AUCTION ROOM MODAL -->
+  <div id="auctionModal" class="modal-overlay">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3>LELANG TERBUKA RESMI</h3>
+      </div>
+      <div class="modal-body auction-display">
+        <div class="auction-gavel-icon">🔨</div>
+        <h4 id="auctionTileTitle" style="font-size: 1.2rem; font-weight: 800; color: #111827;">Nama Properti</h4>
+        <div class="auction-bid-board">
+          <div style="font-size: 0.8rem; color: #6b7280; text-transform: uppercase;">Penawaran Tertinggi Saat Ini</div>
+          <div id="auctionHighestBidText" class="auction-current-price">$0</div>
+          <div id="auctionHighestBidderText" class="auction-highest-bidder">Oleh: Belum Ada Penawaran</div>
+        </div>
+
+        <div style="width: 100%;">
+          <label style="font-size: 0.8rem; font-weight: 700; color: #374151;">Ajukan Penawaran Baru:</label>
+          <div class="auction-controls-grid" style="margin-top: 0.4rem;">
+            <button class="btn btn-dark btn-bid" data-add="1">+$1</button>
+            <button class="btn btn-dark btn-bid" data-add="10">+$10</button>
+            <button class="btn btn-dark btn-bid" data-add="50">+$50</button>
+            <button class="btn btn-dark btn-bid" data-add="100">+$100</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="btnAuctionFold" class="btn btn-dark">Mundur (Fold)</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. CHANCE / COMMUNITY CHEST CARD DRAW MODAL -->
+  <div id="cardModal" class="modal-overlay">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="cardModalTypeTitle">KARTU KESEMPATAN</h3>
+      </div>
+      <div class="modal-body card-draw-view">
+        <div id="cardContainer" class="drawn-card chance-type">
+          <div id="cardTitleText" class="card-title">Judul Kartu</div>
+          <div id="cardDescText" class="card-desc">Deskripsi lengkap dari kartu yang ditarik.</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="btnCardAcknowledge" class="btn btn-brass">Lanjutkan Permainan</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. PROPERTY MANAGEMENT & HOUSING MODAL -->
+  <div id="managementModal" class="modal-overlay">
+    <div class="modal-dialog" style="max-width: 620px;">
+      <div class="modal-header">
+        <h3 id="mgmtModalTitle">KELOLA PROPERTI & RUMAH</h3>
+        <button id="btnCloseMgmt" class="btn btn-dark btn-icon">✕</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 0.82rem; color: #4b5563;">
+          Aturan Pembangunan Merata: Wajib memiliki semua komplek warna dan membangun secara merata (maksimal 4 rumah sebelum hotel).
+        </p>
+        <div id="mgmtPropsList" class="props-manage-list">
+          <!-- Property rows with build / sell / mortgage buttons -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="btnCloseMgmtFooter" class="btn btn-dark">Selesai</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. BILATERAL TRADE MODAL -->
+  <div id="tradeModal" class="modal-overlay">
+    <div class="modal-dialog" style="max-width: 680px;">
+      <div class="modal-header">
+        <h3>TAWARAN PERDAGANGAN & PERTUKARAN ASET</h3>
+        <button id="btnCloseTrade" class="btn btn-dark btn-icon">✕</button>
+      </div>
+      <div class="modal-body">
+        <div style="display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.5rem;">
+          <label style="font-weight: 700; font-size: 0.85rem;">Pilih Mitra Dagang:</label>
+          <select id="tradePartnerSelect" style="padding: 0.35rem 0.6rem; border-radius: 4px; border: 1px solid #ccc;">
+            <!-- Other active players -->
+          </select>
+        </div>
+
+        <div class="trade-split-grid">
+          <!-- Initiator offer -->
+          <div class="trade-player-box">
+            <h4 id="tradeMyName" style="font-size: 0.9rem; font-weight: 800; color: #1e3a8a;">Aset Anda (Ditawarkan)</h4>
+            <div>
+              <label style="font-size: 0.75rem; color: #4b5563;">Uang Tunai Ditawarkan ($):</label>
+              <input type="number" id="tradeOfferCash" value="0" min="0" style="width: 100%; padding: 0.3rem; border: 1px solid #ccc; border-radius: 4px;" />
+            </div>
+            <div style="font-size: 0.75rem; font-weight: 700;">Properti Anda:</div>
+            <div id="tradeMyPropsList" class="trade-item-list"></div>
+            <label style="font-size: 0.75rem; display: flex; align-items: center; gap: 0.4rem;">
+              <input type="checkbox" id="tradeOfferCard" /> Tawarkan Kartu Bebas Penjara
+            </label>
+          </div>
+
+          <!-- Partner requested -->
+          <div class="trade-player-box">
+            <h4 id="tradePartnerName" style="font-size: 0.9rem; font-weight: 800; color: #047857;">Aset Diminta dari Mitra</h4>
+            <div>
+              <label style="font-size: 0.75rem; color: #4b5563;">Uang Tunai Diminta ($):</label>
+              <input type="number" id="tradeRequestCash" value="0" min="0" style="width: 100%; padding: 0.3rem; border: 1px solid #ccc; border-radius: 4px;" />
+            </div>
+            <div style="font-size: 0.75rem; font-weight: 700;">Properti Mitra:</div>
+            <div id="tradePartnerPropsList" class="trade-item-list"></div>
+            <label style="font-size: 0.75rem; display: flex; align-items: center; gap: 0.4rem;">
+              <input type="checkbox" id="tradeRequestCard" /> Minta Kartu Bebas Penjara
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="btnCancelTrade" class="btn btn-dark">Batalkan</button>
+        <button id="btnSubmitTrade" class="btn btn-brass">Kirim Tawaran Dagang</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. NEW GAME SETUP MODAL -->
+  <div id="setupModal" class="modal-overlay active">
+    <div class="modal-dialog" style="max-width: 580px;">
+      <div class="modal-header">
+        <h3>PENGATURAN PERMAINAN BARU (2–4 PEMAIN)</h3>
+      </div>
+      <div class="modal-body">
+        <div>
+          <label style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 0.4rem;">Jumlah Pemain:</label>
+          <div style="display: flex; gap: 0.75rem;">
+            <button class="btn btn-brass btn-player-count active" data-count="2">2 Pemain</button>
+            <button class="btn btn-dark btn-player-count" data-count="3">3 Pemain</button>
+            <button class="btn btn-dark btn-player-count" data-count="4">4 Pemain</button>
+          </div>
+        </div>
+
+        <div id="playerConfigContainers" style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <!-- Injected player slot configs -->
+        </div>
+
+        <div style="background: #fdf8eb; padding: 0.75rem; border-radius: 6px; border: 1px solid #e7d8b5;">
+          <label style="font-size: 0.82rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+            <input type="checkbox" id="chkJackpotRule" />
+            Aktifkan Aturan Free Parking Jackpot (Kumpulkan Pajak & Denda)
+          </label>
+          <div style="font-size: 0.72rem; color: #6b7280; margin-top: 3px; margin-left: 1.5rem;">
+            Saldo awal tiap pemain: $1.500 (pecahan resmi 2x$500, 2x$100, 2x$50, 6x$20, 5x$10, 5x$5, 5x$1).
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="btnStartConfiguredGame" class="btn btn-brass" style="width: 100%; justify-content: center; padding: 0.75rem; font-size: 1rem;">
+          Mulai Permainan Monopoly 🎲
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. CLASSIC RULES GUIDE MODAL -->
+  <div id="rulesModal" class="modal-overlay">
+    <div class="modal-dialog" style="max-width: 600px;">
+      <div class="modal-header">
+        <h3>BUKU ATURAN RESMI MONOPOLY KLASIK</h3>
+        <button id="btnCloseRules" class="btn btn-dark btn-icon">✕</button>
+      </div>
+      <div class="modal-body" style="font-size: 0.85rem; line-height: 1.5; color: #374151;">
+        <h4 style="color: #111827; margin-bottom: 0.3rem;">1. Uang Awal & Giliran</h4>
+        <p>Setiap pemain memperoleh $1.500 di awal permainan. Menggunakan 2 dadu sisi 1-6. Jika melempar angka kembar (doubles), pemain mendapat giliran lempar ekstra. Jika melempar kembar 3 kali berturut-turut, langsung dijebloskan ke Penjara.</p>
+
+        <h4 style="color: #111827; margin-top: 0.8rem; margin-bottom: 0.3rem;">2. Pembelian & Lelang</h4>
+        <p>Mendarat di tanah kosong memungkinkan Anda membelinya dengan harga tercantum. Jika Anda menolak membeli, sistem secara otomatis membuka LELANG resmi kepada seluruh pemain mulai dari $1.</p>
+
+        <h4 style="color: #111827; margin-top: 0.8rem; margin-bottom: 0.3rem;">3. Rumah & Hotel</h4>
+        <p>Wajib memiliki seluruh komplek warna (Monopoly). Pembangunan harus merata (semua petak harus memiliki 1 rumah sebelum bisa dinaikkan ke 2 rumah, dst). Maksimal 4 rumah sebelum dikonversi menjadi 1 Hotel.</p>
+
+        <h4 style="color: #111827; margin-top: 0.8rem; margin-bottom: 0.3rem;">4. Sewa Properti & Komplek Lengkap</h4>
+        <p>Tanah kosong pada komplek yang telah lengkap tanpa rumah menghasilkan 2x lipat sewa dasar! Tanah berumah/berhotel menghasilkan sewa berjenjang sesuai tabel hak milik.</p>
+
+        <h4 style="color: #111827; margin-top: 0.8rem; margin-bottom: 0.3rem;">5. Penjara & Bebas Penjara</h4>
+        <p>Keluar dari penjara dapat dilakukan dengan membayar denda $50, menggunakan Kartu Bebas Penjara, atau berhasil melempar angka kembar dalam 3 putaran.</p>
+
+        <h4 style="color: #111827; margin-top: 0.8rem; margin-bottom: 0.3rem;">6. Hipotek & Kebangkrutan</h4>
+        <p>Anda dapat menggadaikan properti kosong ke Bank untuk memperoleh 50% harga beli. Properti ber-hipotek tidak menghasilkan sewa. Pemain dinyatakan bangkrut jika nilai seluruh aset tidak mencukupi untuk melunasi utang.</p>
+      </div>
+      <div class="modal-footer">
+        <button id="btnCloseRulesFooter" class="btn btn-brass">Saya Paham</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8. GAME OVER / VICTORY MODAL -->
+  <div id="victoryModal" class="modal-overlay">
+    <div class="modal-dialog" style="text-align: center;">
+      <div class="modal-header">
+        <h3 style="width: 100%;">👑 SANG MONOPOLIS SEJATI!</h3>
+      </div>
+      <div class="modal-body" style="padding: 2rem 1rem;">
+        <div style="font-size: 4rem; margin-bottom: 0.5rem;">🏆</div>
+        <h2 id="winnerNameText" style="font-family: var(--font-serif); font-size: 1.8rem; color: #15803d;">Pemain Menang!</h2>
+        <p style="color: #4b5563; font-size: 0.95rem; margin-top: 0.5rem;">
+          Seluruh lawan telah bangkrut. Anda berhasil menguasai seluruh aset properti dan menjadi penguasa tunggal papan Monopoly!
+        </p>
+        <div id="winnerStatsText" style="margin-top: 1rem; font-size: 0.85rem; font-weight: 700; color: #1f2937;"></div>
+      </div>
+      <div class="modal-footer" style="justify-content: center;">
+        <button id="btnVictoryPlayAgain" class="btn btn-brass" style="padding: 0.7rem 1.5rem;">Mainkan Lagi 🎲</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="board-data.js"></script>
+  <script src="audio.js"></script>
+  <script src="ai.js"></script>
+  <script src="engine.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

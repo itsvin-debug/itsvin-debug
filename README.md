@@ -50,6 +50,22 @@ Halo! Saya **Vin**, seorang murid di **SMKN 1 Ciomas** yang memiliki passion bes
   </a>
 </div>
 
+<br />
+
+### 🎲 Mini Game: Digital Monopoly Board Game Arena
+
+<div align="center">
+  <p>Mainkan Monopoly klasik 40-petak dengan estetika fisik taktil, aturan resmi lengkap, lelang transparan, & AI cerdas! 🎩🏠🎲</p>
+
+  <a href="https://itsvin-debug.github.io/itsvin-debug/monopoly/" target="_blank">
+    <img src="https://img.shields.io/badge/PLAY_NOW-VIN'S_MONOPOLY_ARENA-d97706?style=for-the-badge&logo=gamepad&logoColor=white" alt="Play Monopoly Live" />
+  </a>
+  <br /><br />
+  <a href="https://itsvin-debug.github.io/itsvin-debug/monopoly/" target="_blank">
+    <img src="https://capsule-render.vercel.app/api?type=rect&color=0:241913,100:442f24&height=120&text=🎲%20Play%20Digital%20Monopoly%20Arena%20(Click%20Here)&fontSize=22&fontColor=fbbf24&stroke=d97706&strokeWidth=2&borderRadius=12&desc=2–4%20Pemain%20%7C%20Human%20vs%20AI%20%7C%20Aturan%20Klasik%20Resmi%20•%20Lelang%20•%20Hipotek%20•%20Trade&descFontSize=14&descAlignY=68" width="90%" alt="Play Digital Monopoly Banner" />
+  </a>
+</div>
+
 ---
 
 ### 👾 Pac-Man & Snake Contribution Games
