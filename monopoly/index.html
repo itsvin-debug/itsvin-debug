@@ -146,6 +146,7 @@
     <div class="modal-dialog">
       <div class="modal-header">
         <h3>PEMBELIAN PROPERTI</h3>
+        <button id="btnCloseBuy" class="btn btn-dark btn-icon">✕</button>
       </div>
       <div class="modal-body">
         <div id="deedCardContainer" class="deed-card">
@@ -167,6 +168,7 @@
     <div class="modal-dialog">
       <div class="modal-header">
         <h3>LELANG TERBUKA RESMI</h3>
+        <button id="btnCloseAuction" class="btn btn-dark btn-icon">✕</button>
       </div>
       <div class="modal-body auction-display">
         <div class="auction-gavel-icon">🔨</div>
@@ -198,6 +200,7 @@
     <div class="modal-dialog">
       <div class="modal-header">
         <h3 id="cardModalTypeTitle">KARTU KESEMPATAN</h3>
+        <button id="btnCloseCard" class="btn btn-dark btn-icon">✕</button>
       </div>
       <div class="modal-body card-draw-view">
         <div id="cardContainer" class="drawn-card chance-type">
@@ -285,10 +288,11 @@
   </div>
 
   <!-- 6. NEW GAME SETUP MODAL -->
-  <div id="setupModal" class="modal-overlay active">
+  <div id="setupModal" class="modal-overlay">
     <div class="modal-dialog" style="max-width: 580px;">
       <div class="modal-header">
         <h3>PENGATURAN PERMAINAN BARU (2–4 PEMAIN)</h3>
+        <button id="btnCloseSetup" class="btn btn-dark btn-icon">✕</button>
       </div>
       <div class="modal-body">
         <div>

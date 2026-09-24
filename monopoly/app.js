@@ -916,7 +916,27 @@ document.addEventListener("DOMContentLoaded", () => {
     setupModal.classList.add("active");
   });
 
-  // Initial render of setup slots
+  const btnCloseBuy = document.getElementById("btnCloseBuy");
+  if (btnCloseBuy) btnCloseBuy.onclick = () => buyModal.classList.remove("active");
+
+  const btnCloseAuction = document.getElementById("btnCloseAuction");
+  if (btnCloseAuction) btnCloseAuction.onclick = () => auctionModal.classList.remove("active");
+
+  const btnCloseCard = document.getElementById("btnCloseCard");
+  if (btnCloseCard) btnCloseCard.onclick = () => cardModal.classList.remove("active");
+
+  const btnCloseSetup = document.getElementById("btnCloseSetup");
+  if (btnCloseSetup) btnCloseSetup.onclick = () => setupModal.classList.remove("active");
+
+  // Initial render of setup slots & auto-start 4-player game
   renderSetupSlots(setupPlayerCount);
   renderBoardTiles();
+
+  const defaultPlayers = [
+    { name: "Vin (Human)", token: "🎩", tokenName: "Top Hat", metal: "pewter", type: "human" },
+    { name: "Stockfish Lite (AI)", token: "🚗", tokenName: "Roadster", metal: "brass", type: "ai", aiDifficulty: "normal" },
+    { name: "Alpha Tycoon (AI)", token: "🚢", tokenName: "Battleship", metal: "silver", type: "ai", aiDifficulty: "normal" },
+    { name: "Grand Baron (AI)", token: "👞", tokenName: "Boot", metal: "bronze", type: "ai", aiDifficulty: "normal" }
+  ];
+  engine.startNewGame(defaultPlayers, { freeParkingJackpot: false });
 });
