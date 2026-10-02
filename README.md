@@ -1,28 +1,28 @@
 <div align="center">
 
   <!-- Header Banner -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,24&height=200&section=header&text=Hi%20there,%20I'm%20Vin!%20👋&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Student%20at%20SMKN%201%20Ciomas%20%7C%20Aspiring%20Web%20Developer&descFontSize=18&descAlignY=58&descAlign=50" width="100%" alt="Header Banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,24&height=200&section=header&text=Hi%20there,%20I'm%20Vin!%20👋&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Student%20%7C%20Aspiring%20Web%20Developer&descFontSize=18&descAlignY=58&descAlign=50" width="100%" alt="Header Banner" />
 
   <!-- Animated Typing Text -->
   <a href="https://github.com/itsvin-debug">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=500&lines=Student+at+SMKN+1+Ciomas+%F0%9F%8E%93;Aspiring+Web+Developer+%F0%9F%92%BB;PHP%2C+Laravel%2C+JS%2C+React+%26+Python+%E2%9A%A1;Building+Modern+Web+Applications+%F0%9F%9A%80" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=500&lines=Passionate+Student+%F0%9F%8E%93;Aspiring+Web+Developer+%F0%9F%92%BB;PHP%2C+Laravel%2C+JS%2C+React+%26+Python+%E2%9A%A1;Building+Modern+Web+Applications+%F0%9F%9A%80" alt="Typing SVG" />
   </a>
 
 </div>
 
 ---
 
-### 👨‍💻 Tentang Saya
+### 👨‍💻 About Me
 
-Halo! Saya **Vin**, seorang murid di **SMKN 1 Ciomas** yang memiliki passion besar dan bercita-cita menjadi seorang **Web Developer** profesional. Saya senang membangun aplikasi web, memecahkan tantangan pemrograman, dan terus memperdalam keahlian di dunia software development.
+Hello! I am **Vin**, a dedicated **student** with a strong passion for technology and an aspiration to become a professional **Web Developer**. I enjoy designing and building modern web applications, tackling complex programming challenges, and continuously learning new paradigms in software engineering.
 
-- 🎓 **Pendidikan:** Siswa di **SMKN 1 Ciomas**
-- 🎯 **Cita-cita:** Professional Web Developer & Software Engineer
-- ⚡ **Bahasa Utama:** PHP, JavaScript, Python
-- 🚀 **Framework & Library:** Laravel, React
-- 🗄️ **Database:** MySQL / SQL
-- 🌱 **Fokus Belajar Saat Ini:** Fullstack Web Development, RESTful API, & Clean Code
-- 💬 **Diskusi Santai:** PHP/Laravel, JavaScript/React, Web Slicing, Python Scripting
+- 🎓 **Status:** Student & Tech Enthusiast
+- 🎯 **Career Goal:** Professional Web Developer & Software Engineer
+- ⚡ **Core Languages:** PHP, JavaScript, Python
+- 🚀 **Frameworks & Libraries:** Laravel, React
+- 🗄️ **Databases:** MySQL / SQL
+- 🌱 **Current Learning Focus:** Full-Stack Web Development, RESTful APIs, & Clean Architecture
+- 💬 **Open for Discussion:** PHP/Laravel, JavaScript/React, Modern UI Slicing, & Python Scripting
 
 ---
 
@@ -39,14 +39,14 @@ Halo! Saya **Vin**, seorang murid di **SMKN 1 Ciomas** yang memiliki passion bes
 ### ♟️ Mini Game: Real-Time Chess Arena
 
 <div align="center">
-  <p>Tantang saya atau AI Bot dalam permainan catur interaktif langsung di browsermu! ♟️⚡</p>
+  <p>Challenge me or an AI Bot in an interactive real-time chess match directly in your browser! ♟️⚡</p>
 
   <a href="https://itsvin-debug.github.io/itsvin-debug/chess/" target="_blank">
     <img src="https://img.shields.io/badge/PLAY_NOW-VIN'S_CHESS_ARENA-0ea5e9?style=for-the-badge&logo=lichess&logoColor=white" alt="Play Chess Live" />
   </a>
   <br /><br />
   <a href="https://itsvin-debug.github.io/itsvin-debug/chess/" target="_blank">
-    <img src="https://capsule-render.vercel.app/api?type=rect&color=0:090d16,100:1e293b&height=120&text=♟️%20Play%20Live%20Chess%20Arena%20(Click%20Here)&fontSize=22&fontColor=38bdf8&stroke=38bdf8&strokeWidth=2&borderRadius=12&desc=Vs%20AI%20Bot%20%7C%202-Pemain%20Pass%20&%20Play%20•%20Live%20Sound%20Effects%20•%20Instant%20Play&descFontSize=14&descAlignY=68" width="90%" alt="Play Live Chess Banner" />
+    <img src="https://capsule-render.vercel.app/api?type=rect&color=0:090d16,100:1e293b&height=120&text=♟️%20Play%20Live%20Chess%20Arena%20(Click%20Here)&fontSize=22&fontColor=38bdf8&stroke=38bdf8&strokeWidth=2&borderRadius=12&desc=Vs%20AI%20Bot%20%7C%202-Player%20Pass%20%26%20Play%20•%20Live%20Sound%20Effects%20•%20Instant%20Play&descFontSize=14&descAlignY=68" width="90%" alt="Play Live Chess Banner" />
   </a>
 </div>
 
@@ -55,14 +55,14 @@ Halo! Saya **Vin**, seorang murid di **SMKN 1 Ciomas** yang memiliki passion bes
 ### 🎲 Mini Game: Digital Monopoly Board Game Arena
 
 <div align="center">
-  <p>Mainkan Monopoly klasik 40-petak dengan estetika fisik taktil, aturan resmi lengkap, lelang transparan, & AI cerdas! 🎩🏠🎲</p>
+  <p>Play the classic 40-tile Monopoly featuring tactile physical aesthetics, complete official rules, transparent auctions, & smart AI! 🎩🏠🎲</p>
 
   <a href="https://itsvin-debug.github.io/itsvin-debug/monopoly/" target="_blank">
     <img src="https://img.shields.io/badge/PLAY_NOW-VIN'S_MONOPOLY_ARENA-d97706?style=for-the-badge&logo=gamepad&logoColor=white" alt="Play Monopoly Live" />
   </a>
   <br /><br />
   <a href="https://itsvin-debug.github.io/itsvin-debug/monopoly/" target="_blank">
-    <img src="https://capsule-render.vercel.app/api?type=rect&color=0:241913,100:442f24&height=120&text=🎲%20Play%20Digital%20Monopoly%20Arena%20(Click%20Here)&fontSize=22&fontColor=fbbf24&stroke=d97706&strokeWidth=2&borderRadius=12&desc=2–4%20Pemain%20%7C%20Human%20vs%20AI%20%7C%20Aturan%20Klasik%20Resmi%20•%20Lelang%20•%20Hipotek%20•%20Trade&descFontSize=14&descAlignY=68" width="90%" alt="Play Digital Monopoly Banner" />
+    <img src="https://capsule-render.vercel.app/api?type=rect&color=0:241913,100:442f24&height=120&text=🎲%20Play%20Digital%20Monopoly%20Arena%20(Click%20Here)&fontSize=22&fontColor=fbbf24&stroke=d97706&strokeWidth=2&borderRadius=12&desc=2–4%20Players%20%7C%20Human%20vs%20AI%20%7C%20Official%20Classic%20Rules%20•%20Auctions%20•%20Mortgages%20•%20Trades&descFontSize=14&descAlignY=68" width="90%" alt="Play Digital Monopoly Banner" />
   </a>
 </div>
 
@@ -133,7 +133,7 @@ Halo! Saya **Vin**, seorang murid di **SMKN 1 Ciomas** yang memiliki passion bes
 
 ---
 
-### 📬 Hubungi Saya
+### 📬 Connect With Me
 
 <div align="center">
 
