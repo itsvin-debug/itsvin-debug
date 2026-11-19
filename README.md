@@ -3,80 +3,83 @@
   <!-- Handcrafted Custom Animated Sunset Beach Banner -->
   <img src="assets/beach-banner.svg" width="100%" alt="Sunset Beach Scene Banner" />
 
-  <!-- Animated Typing Text (Sunset Shoreline Vibes) -->
+  <!-- Animated Typing Text -->
   <a href="https://github.com/itsvin-debug">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=FFB703&center=true&vCenter=true&width=560&lines=Coding+by+the+digital+shore+%F0%9F%8C%B4;Building+modern+web+apps+with+Laravel%2C+React+%26+Python+%F0%9F%9A%80;Always+learning%2C+always+shipping+code+%E2%9A%A1" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=FFB703&center=true&vCenter=true&width=580&lines=Coding+by+the+digital+shore;Building+modern+web+apps+with+Laravel%2C+Node.js+%26+React;Always+learning%2C+always+shipping+code" alt="Typing SVG" />
   </a>
 
 </div>
 
 ---
 
-### 🌴 About Me
+### ABOUT ME
 
-Hello! I am **Vin**, a dedicated student with a strong passion for technology and an aspiration to become a professional **Web Developer**. I enjoy designing and building modern web applications, tackling complex programming challenges, and continuously learning new paradigms in software engineering.
+I am **Vin**, a student and Full-Stack Web Developer passionate about engineering robust, maintainable web applications and performant backends. My focus centers on clean architecture, scalable RESTful APIs, and modern, responsive user interfaces.
 
-- 🎓 **Status:** Student & Tech Enthusiast
-- 🎯 **Career Goal:** Professional Web Developer & Software Engineer
-- ⚡ **Core Languages:** PHP, JavaScript, Python
-- 🚀 **Frameworks & Libraries:** Laravel, React
-- 🗄️ **Databases:** MySQL / SQL
-- 🌱 **Current Learning Focus:** Full-Stack Web Development, RESTful APIs, & Clean Architecture
-- 💬 **Open for Discussion:** PHP/Laravel, JavaScript/React, Modern UI Slicing, & Python Scripting
+<br />
+
+| Specification | Details |
+| :--- | :--- |
+| **Status** | Student & Full-Stack Web Developer |
+| **Core Languages** | `PHP` • `JavaScript` • `Python` |
+| **Primary Frameworks & Runtime** | `Laravel` • `Node.js` • `React` |
+| **Databases** | `MySQL` / `SQL` |
+| **Current Focus** | Full-Stack Web Architecture, RESTful APIs, & Modern UI Engineering |
+| **Open for Discussion** | Laravel, Node.js, React, UI Slicing, & Python Scripting |
 
 ---
 
-### 🛠️ Tech Stack & Tools
+### TECH STACK & TOOLS
 
 <div align="center">
 
   <h4>Languages & Frameworks</h4>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=php,laravel,js,react,python,mysql,html,css,tailwind" alt="Languages & Frameworks" />
+    <img src="https://skillicons.dev/icons?i=php,laravel,nodejs,js,react,python,mysql,html,css,tailwind" alt="Languages & Frameworks" />
   </a>
 
   <br /><br />
 
   <h4>Tools & Platforms</h4>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=git,github,vscode,postman,nodejs,vite" alt="Tools & Platforms" />
+    <img src="https://skillicons.dev/icons?i=git,github,vscode,postman,vite" alt="Tools & Platforms" />
   </a>
 
 </div>
 
 ---
 
-### 🎮 Interactive Arenas
+### INTERACTIVE ARENAS
 
 <div align="center">
 
-  <h4>♟️ Real-Time Chess Arena</h4>
+  <h4>Real-Time Chess Arena</h4>
   <p>Challenge an AI Bot or a friend in an interactive real-time chess match directly in your browser.</p>
   <a href="https://itsvin-debug.github.io/itsvin-debug/chess/" target="_blank">
     <img src="https://img.shields.io/badge/PLAY_NOW-VIN'S_CHESS_ARENA-0077B6?style=for-the-badge&logo=lichess&logoColor=white" alt="Play Chess Live" />
   </a>
   <br /><br />
   <a href="https://itsvin-debug.github.io/itsvin-debug/chess/" target="_blank">
-    <img src="https://capsule-render.vercel.app/api?type=rect&color=0:110B29,100:3A1C71&height=110&text=♟️%20Play%20Live%20Chess%20Arena%20(Click%20Here)&fontSize=20&fontColor=FFAF7B&stroke=D76D77&strokeWidth=2&borderRadius=10&desc=Vs%20AI%20Bot%20%7C%202-Player%20Pass%20%26%20Play%20•%20Live%20Audio%20•%20Instant%20Play&descFontSize=13&descAlignY=68" width="92%" alt="Play Live Chess Banner" />
+    <img src="assets/chess-banner.svg" width="92%" alt="Play Real-Time Chess Arena" />
   </a>
 
   <br /><br />
 
-  <h4>🎲 Digital Monopoly Board Game Arena</h4>
+  <h4>Digital Monopoly Board Game Arena</h4>
   <p>Classic 40-tile Monopoly featuring tactile physical aesthetics, official rules, transparent auctions, & smart AI.</p>
   <a href="https://itsvin-debug.github.io/itsvin-debug/monopoly/" target="_blank">
     <img src="https://img.shields.io/badge/PLAY_NOW-VIN'S_MONOPOLY_ARENA-D76D77?style=for-the-badge&logo=gamepad&logoColor=white" alt="Play Monopoly Live" />
   </a>
   <br /><br />
   <a href="https://itsvin-debug.github.io/itsvin-debug/monopoly/" target="_blank">
-    <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,100:2B1444&height=110&text=🎲%20Play%20Digital%20Monopoly%20Arena%20(Click%20Here)&fontSize=20&fontColor=FFB703&stroke=FFAF7B&strokeWidth=2&borderRadius=10&desc=2–4%20Players%20%7C%20Human%20vs%20AI%20%7C%20Classic%20Rules%20•%20Auctions%20•%20Trades&descFontSize=13&descAlignY=68" width="92%" alt="Play Digital Monopoly Banner" />
+    <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,100:2B1444&height=110&text=Play%20Digital%20Monopoly%20Arena%20(Click%20Here)&fontSize=20&fontColor=FFB703&stroke=FFAF7B&strokeWidth=2&borderRadius=10&desc=2–4%20Players%20%7C%20Human%20vs%20AI%20%7C%20Classic%20Rules%20•%20Auctions%20•%20Trades&descFontSize=13&descAlignY=68" width="92%" alt="Play Digital Monopoly Banner" />
   </a>
 
 </div>
 
 ---
 
-### 🌊 Contribution Ocean Wave
+### CONTRIBUTION ACTIVITY
 
 <div align="center">
 
@@ -90,7 +93,7 @@ Hello! I am **Vin**, a dedicated student with a strong passion for technology an
 
 ---
 
-### 📊 GitHub Statistics & Activity
+### GITHUB STATISTICS & ACTIVITY
 
 <div align="center">
 
@@ -115,7 +118,7 @@ Hello! I am **Vin**, a dedicated student with a strong passion for technology an
 
 ---
 
-### 📬 Connect With Me
+### CONNECT WITH ME
 
 <div align="center">
 
