@@ -33,16 +33,23 @@ I am **Vin**, a student and Full-Stack Web Developer passionate about engineerin
 
 <div align="center">
 
-  <h4>Languages & Frameworks</h4>
+  <h4>Frameworks & Runtimes</h4>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=php,laravel,nodejs,js,react,python,mysql,html,css,tailwind" alt="Languages & Frameworks" />
+    <img src="https://skillicons.dev/icons?i=laravel,nodejs,react" alt="Frameworks and Runtimes" />
+  </a>
+
+  <br /><br />
+
+  <h4>Languages & Database</h4>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=php,js,python,mysql,html,css,tailwind" alt="Languages and Database" />
   </a>
 
   <br /><br />
 
   <h4>Tools & Platforms</h4>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=git,github,vscode,postman,vite" alt="Tools & Platforms" />
+    <img src="https://skillicons.dev/icons?i=git,github,vscode,postman,vite" alt="Tools and Platforms" />
   </a>
 
 </div>
@@ -83,6 +90,16 @@ I am **Vin**, a student and Full-Stack Web Developer passionate about engineerin
 
 <div align="center">
 
+  <!-- Pac-Man Game Animation -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/itsvin-debug/itsvin-debug/output/pacman-contribution-graph-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/itsvin-debug/itsvin-debug/output/pacman-contribution-graph.svg">
+    <img alt="Pac-Man Contribution Graph" src="https://raw.githubusercontent.com/itsvin-debug/itsvin-debug/output/pacman-contribution-graph.svg" width="100%" />
+  </picture>
+
+  <br /><br />
+
+  <!-- Snake Game Animation -->
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/itsvin-debug/itsvin-debug/output/github-contribution-grid-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/itsvin-debug/itsvin-debug/output/github-contribution-grid-snake.svg">
@@ -97,14 +114,9 @@ I am **Vin**, a student and Full-Stack Web Developer passionate about engineerin
 
 <div align="center">
 
-  <!-- Streak Stats Card (Custom Sunset Beach Palette) -->
-  <img src="https://streak-stats.demolab.com/?user=itsvin-debug&background=0D1117&border=D76D77&stroke=00B4D8&ring=FFAF7B&fire=FFB703&currStreakLabel=00B4D8&currStreakNum=FFAF7B&sideNums=FFAF7B&sideLabels=00B4D8&dates=90E0EF" alt="Vin's GitHub Streak" />
-
-  <br /><br />
-
-  <!-- Side-by-side Stats & Languages (Reflows naturally on mobile devices) -->
+  <!-- Streak Stats & Top Languages Side-by-Side (Fluid reflow on mobile) -->
   <p align="center">
-    <img src="https://github-readme-stats.vercel.app/api?username=itsvin-debug&show_icons=true&include_all_commits=true&count_private=true&bg_color=0D1117&title_color=FFAF7B&text_color=E2E8F0&icon_color=FFB703&border_color=D76D77&border_radius=10" alt="Vin's GitHub Stats" />
+    <img src="https://streak-stats.demolab.com/?user=itsvin-debug&background=0D1117&border=D76D77&stroke=00B4D8&ring=FFAF7B&fire=FFB703&currStreakLabel=00B4D8&currStreakNum=FFAF7B&sideNums=FFAF7B&sideLabels=00B4D8&dates=90E0EF" alt="Vin's GitHub Streak" />
     &nbsp;&nbsp;
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=itsvin-debug&layout=compact&hide=hack,ren'py&bg_color=0D1117&title_color=FFAF7B&text_color=E2E8F0&border_color=D76D77&border_radius=10" alt="Top Languages" />
   </p>
