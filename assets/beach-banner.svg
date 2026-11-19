@@ -1,0 +1,247 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="100%" height="auto">
+  <defs>
+    <!-- Sky Gradient -->
+    <linearGradient id="sunsetSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0e0b24" />
+      <stop offset="30%" stop-color="#241442" />
+      <stop offset="55%" stop-color="#5c2050" />
+      <stop offset="78%" stop-color="#b84551" />
+      <stop offset="92%" stop-color="#e87853" />
+      <stop offset="100%" stop-color="#ffaf7b" />
+    </linearGradient>
+
+    <!-- Sun Glow & Core -->
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="35%" stop-color="#ffeaa7" stop-opacity="0.9" />
+      <stop offset="70%" stop-color="#ff7675" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#d63031" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="sunAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fdcb6e" stop-opacity="0.5" />
+      <stop offset="50%" stop-color="#e17055" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#2d3436" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Ocean Gradient -->
+    <linearGradient id="oceanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d65a50" />
+      <stop offset="18%" stop-color="#843258" />
+      <stop offset="45%" stop-color="#3d1b4d" />
+      <stop offset="80%" stop-color="#1f1438" />
+      <stop offset="100%" stop-color="#120c24" />
+    </linearGradient>
+
+    <!-- Sand Gradient -->
+    <linearGradient id="sandGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a1836" />
+      <stop offset="100%" stop-color="#120b1f" />
+    </linearGradient>
+
+    <!-- Text Shadow Filter -->
+    <filter id="textShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.75" />
+    </filter>
+
+    <filter id="subTextShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.8" />
+    </filter>
+
+    <filter id="blurGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" />
+    </filter>
+  </defs>
+
+  <style>
+    /* CSS Keyframes Animations */
+    @keyframes starPulse {
+      0%, 100% { opacity: 0.2; transform: scale(0.8); }
+      50% { opacity: 1; transform: scale(1.2); }
+    }
+    @keyframes sunPulse {
+      0%, 100% { transform: scale(1); opacity: 0.95; }
+      50% { transform: scale(1.04); opacity: 1; }
+    }
+    @keyframes cloudDrift1 {
+      0% { transform: translateX(0); }
+      50% { transform: translateX(18px); }
+      100% { transform: translateX(0); }
+    }
+    @keyframes cloudDrift2 {
+      0% { transform: translateX(0); }
+      50% { transform: translateX(-24px); }
+      100% { transform: translateX(0); }
+    }
+    @keyframes shimmerMove {
+      0%, 100% { opacity: 0.55; transform: scaleX(0.92); }
+      50% { opacity: 0.95; transform: scaleX(1.08); }
+    }
+    @keyframes waveSlow {
+      0% { transform: translateX(0); }
+      50% { transform: translateX(-15px) translateY(1.5px); }
+      100% { transform: translateX(0); }
+    }
+    @keyframes surfRoll {
+      0%, 100% { transform: translateY(0) scaleY(1); opacity: 0.7; }
+      50% { transform: translateY(-3px) scaleY(1.15); opacity: 0.95; }
+    }
+    @keyframes palmSwayL {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(2.2deg); }
+    }
+    @keyframes palmSwayR {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(-1.8deg); }
+    }
+    @keyframes birdFlight {
+      0%, 100% { transform: translateY(0) translateX(0); }
+      50% { transform: translateY(-4px) translateX(6px); }
+    }
+
+    .star { animation: starPulse 3.5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .star-d1 { animation-delay: 0.8s; }
+    .star-d2 { animation-delay: 1.7s; }
+    .star-d3 { animation-delay: 2.5s; }
+
+    .cloud-1 { animation: cloudDrift1 14s ease-in-out infinite; }
+    .cloud-2 { animation: cloudDrift2 18s ease-in-out infinite; }
+
+    .sun-core { animation: sunPulse 6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .shimmer { animation: shimmerMove 3.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .shimmer-d1 { animation-delay: 0.7s; }
+    .shimmer-d2 { animation-delay: 1.4s; }
+
+    .wave-back { animation: waveSlow 8s ease-in-out infinite; }
+    .wave-front { animation: surfRoll 4.5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+
+    .palm-left { animation: palmSwayL 5.5s ease-in-out infinite; transform-box: fill-box; transform-origin: bottom left; }
+    .palm-right { animation: palmSwayR 6.2s ease-in-out infinite; transform-box: fill-box; transform-origin: bottom right; }
+    .bird { animation: birdFlight 7s ease-in-out infinite; }
+  </style>
+
+  <!-- 1. Background Sky -->
+  <rect width="900" height="320" fill="url(#sunsetSky)" />
+
+  <!-- 2. Twinkling Stars in Evening Sky -->
+  <g fill="#ffffff">
+    <circle cx="160" cy="35" r="1.2" class="star" opacity="0.6" />
+    <circle cx="280" cy="50" r="1.5" class="star star-d1" opacity="0.7" />
+    <circle cx="420" cy="25" r="1.1" class="star star-d2" opacity="0.5" />
+    <circle cx="620" cy="38" r="1.4" class="star star-d3" opacity="0.8" />
+    <circle cx="750" cy="48" r="1.2" class="star star-d1" opacity="0.6" />
+    <circle cx="820" cy="28" r="1.6" class="star star-d2" opacity="0.75" />
+  </g>
+
+  <!-- 3. Soft Sunset Clouds -->
+  <g opacity="0.25">
+    <path class="cloud-1" fill="#fd79a8" d="M140,75 Q210,65 290,78 Q360,70 410,82 Q320,90 220,86 Z" />
+    <path class="cloud-2" fill="#fdcb6e" d="M520,95 Q590,82 680,94 Q760,88 830,102 Q720,108 610,104 Z" />
+    <path class="cloud-1" fill="#e17055" d="M30,110 Q90,102 170,112 Q120,122 40,118 Z" opacity="0.6" />
+  </g>
+
+  <!-- 4. Sun & Atmospheric Glow -->
+  <!-- Ambient Sun Corona -->
+  <circle cx="450" cy="186" r="120" fill="url(#sunAura)" />
+  <circle cx="450" cy="186" r="75" fill="url(#sunGlow)" opacity="0.85" filter="url(#blurGlow)" />
+  <!-- Sun Disk -->
+  <circle cx="450" cy="186" r="42" fill="url(#sunGlow)" class="sun-core" />
+
+  <!-- 5. Distant Soaring Birds -->
+  <g fill="none" stroke="#2c1438" stroke-width="1.8" stroke-linecap="round" class="bird" opacity="0.75">
+    <path d="M340,125 Q346,118 352,125 Q358,118 364,125" />
+    <path d="M362,112 Q367,106 372,112 Q377,106 382,112" stroke-width="1.4" />
+  </g>
+
+  <!-- 6. Ocean Water Body -->
+  <rect x="0" y="188" width="900" height="132" fill="url(#oceanGrad)" />
+
+  <!-- 7. Sun Light Reflection on Water Surface -->
+  <g class="shimmer">
+    <ellipse cx="450" cy="192" rx="48" ry="2.2" fill="#ffeaa7" opacity="0.9" />
+    <ellipse cx="450" cy="197" rx="36" ry="2.0" fill="#fab1a0" opacity="0.85" class="shimmer-d1" />
+    <ellipse cx="450" cy="203" rx="55" ry="2.5" fill="#ffeaa7" opacity="0.75" class="shimmer-d2" />
+    <ellipse cx="450" cy="210" rx="42" ry="2.4" fill="#fab1a0" opacity="0.7" class="shimmer-d1" />
+    <ellipse cx="450" cy="218" rx="68" ry="3.0" fill="#ffeaa7" opacity="0.6" class="shimmer-d2" />
+    <ellipse cx="450" cy="228" rx="52" ry="2.8" fill="#fab1a0" opacity="0.5" class="shimmer-d1" />
+    <ellipse cx="450" cy="239" rx="80" ry="3.2" fill="#ffeaa7" opacity="0.4" class="shimmer-d2" />
+    <ellipse cx="450" cy="252" rx="65" ry="3.0" fill="#fab1a0" opacity="0.3" />
+  </g>
+
+  <!-- 8. Animated Ocean Waves -->
+  <!-- Deep Mid Wave -->
+  <path class="wave-back" fill="#4d1a49" opacity="0.4" d="M0,225 Q150,215 300,223 T600,220 T900,224 L900,320 L0,320 Z" />
+  <!-- Tidal Wave Swell -->
+  <path class="wave-front" fill="#2b1442" opacity="0.6" d="M0,248 Q180,238 360,246 T720,242 T900,247 L900,320 L0,320 Z" />
+
+  <!-- 9. Shoreline & Sand Dunes -->
+  <path fill="url(#sandGrad)" d="M0,270 Q160,256 340,268 Q520,280 720,266 Q820,260 900,264 L900,320 L0,320 Z" />
+
+  <!-- Lapping Surf Foam Line -->
+  <path class="wave-front" fill="none" stroke="#ffeaa7" stroke-width="2.5" opacity="0.8" stroke-linecap="round" stroke-dasharray="12 4"
+        d="M0,268 Q160,254 340,266 Q520,278 720,264 Q820,258 900,262" />
+  <path fill="none" stroke="#90e0ef" stroke-width="1.2" opacity="0.5"
+        d="M0,271 Q160,257 340,269 Q520,281 720,267 Q820,261 900,265" />
+
+  <!-- 10. Left Tropical Coconut Palm Tree Silhouette -->
+  <g class="palm-left">
+    <!-- Trunk -->
+    <path fill="#0d091a" d="M-15,320 C10,270 35,210 50,150 C58,118 68,82 92,60 C87,60 76,85 68,122 C52,190 28,260 -5,320 Z" />
+    <!-- Fronds -->
+    <!-- Frond 1 (Arching Right) -->
+    <path fill="#0d091a" d="M92,60 Q130,40 185,55 C160,65 140,80 92,60 Z" />
+    <path fill="#140d24" d="M92,60 Q150,52 210,75 C180,85 145,95 92,60 Z" opacity="0.9" />
+    <!-- Frond 2 (Arching Top-Right) -->
+    <path fill="#0d091a" d="M92,60 Q120,15 170,18 C145,35 125,48 92,60 Z" />
+    <!-- Frond 3 (Arching Upward) -->
+    <path fill="#140d24" d="M92,60 Q95,-5 118,5 C110,25 105,45 92,60 Z" />
+    <!-- Frond 4 (Arching Left) -->
+    <path fill="#0d091a" d="M92,60 Q45,25 5,42 C30,55 58,58 92,60 Z" />
+    <!-- Frond 5 (Drooping Down-Left) -->
+    <path fill="#140d24" d="M92,60 Q50,68 15,95 C40,90 65,82 92,60 Z" />
+    <!-- Frond 6 (Drooping Down-Right) -->
+    <path fill="#0d091a" d="M92,60 Q125,85 175,115 C145,108 118,92 92,60 Z" />
+  </g>
+
+  <!-- 11. Right Tropical Coconut Palm Tree Silhouette -->
+  <g class="palm-right">
+    <!-- Trunk -->
+    <path fill="#0d091a" d="M915,320 C890,265 868,205 852,148 C844,118 834,86 812,65 C817,65 828,88 835,124 C848,188 870,255 905,320 Z" />
+    <!-- Fronds -->
+    <path fill="#0d091a" d="M812,65 Q775,42 715,58 C740,68 762,82 812,65 Z" />
+    <path fill="#140d24" d="M812,65 Q755,54 695,78 C725,88 760,98 812,65 Z" opacity="0.9" />
+    <path fill="#0d091a" d="M812,65 Q780,20 730,22 C755,38 778,50 812,65 Z" />
+    <path fill="#140d24" d="M812,65 Q805,-2 782,8 C790,28 798,48 812,65 Z" />
+    <path fill="#0d091a" d="M812,65 Q855,28 895,46 C870,58 842,60 812,65 Z" />
+    <path fill="#140d24" d="M812,65 Q850,72 888,102 C862,94 838,85 812,65 Z" />
+    <path fill="#0d091a" d="M812,65 Q780,88 725,120 C755,112 785,95 812,65 Z" />
+  </g>
+
+  <!-- 12. Text Overlay Content -->
+  <!-- Centered Title -->
+  <text x="450" y="96"
+        text-anchor="middle"
+        font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+        font-size="36"
+        font-weight="800"
+        fill="#ffffff"
+        filter="url(#textShadow)"
+        letter-spacing="0.5">
+    Hi there, I'm Vin! 🌊
+  </text>
+
+  <!-- Centered Tagline Pill/Subtext -->
+  <g filter="url(#subTextShadow)">
+    <!-- Subtle Frosted Backdrop for Subtitle Pill -->
+    <rect x="290" y="116" width="320" height="28" rx="14" fill="#0e0b24" fill-opacity="0.5" stroke="#ffeaa7" stroke-opacity="0.3" stroke-width="1" />
+    <text x="450" y="135"
+          text-anchor="middle"
+          font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+          font-size="14.5"
+          font-weight="600"
+          fill="#ffeaa7"
+          letter-spacing="1.2">
+      Student | Aspiring Web Developer
+    </text>
+  </g>
+</svg>
